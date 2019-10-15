@@ -868,13 +868,14 @@ int privoxy_millisleep(unsigned milliseconds)
  *
  *                XXX: It's very unlikely to happen, but if the malloc()
  *                call fails the time zone will be permanently set to UTC.
- * XinLake     :  use the ISO C and C++ conformant name
+ *
  * Parameters  :
  *          1  :  tm: Broken-down time struct.
  *
  * Returns     :  tm converted into time_t seconds.
  *
  *********************************************************************/
+// XinLake modified: Use the ISO C and C++ conformant name
 time_t timegm(struct tm *tm)
 {
    time_t answer;
