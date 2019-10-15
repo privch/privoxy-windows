@@ -6,3 +6,5 @@ Build and debug Privoxy using Visual Studio. Privoxy was configured as console a
 #define FEATURE_CONNECTION_KEEP_ALIVE
 #define FEATURE_CLIENT_TAGS
 ```
+
+dftables is the program used to generate the source file chartables.c required by PCRE.
