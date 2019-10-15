@@ -158,6 +158,9 @@
     <ClInclude Include="privoxy-3.0.28\pcre\pcre.h">
       <Filter>pcre</Filter>
     </ClInclude>
+    <ClInclude Include="privoxy-windows\privoxy-windows.h">
+      <Filter>privoxy-windows</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="privoxy-3.0.28\w32.rc">

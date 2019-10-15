@@ -1,5 +1,5 @@
-#ifndef _PRIVOXY_CONFIG_
-#define _PRIVOXY_CONFIG_
+#ifndef PRIVOXY_CONFIG
+#define PRIVOXY_CONFIG
 
 
 #define VERSION "3.0.28"

@@ -44,7 +44,7 @@
 
 /* For gettimeofday() */
 #ifdef _WIN32
-extern int gettimeofday(struct timeval* tp, void* tzp);
+#include <privoxy-windows.h>
 #else
 #include <sys/time.h>
 #endif
