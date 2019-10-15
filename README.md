@@ -7,6 +7,6 @@ Build and debug Privoxy (<https://www.privoxy.org/>) using Visual Studio. Privox
 #define FEATURE_CLIENT_TAGS
 ```
 
-The dftables is the program used to generate the source file chartables.c required by PCRE.
+The dftables is the program used to generate the source file `chartables.c` required by PCRE.
 
 ![](https://github.com/xinlake/privoxy-windows/raw/master/Assets/screen-1.jpg)
