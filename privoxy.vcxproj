@@ -72,23 +72,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IntDir>$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
-    <OutDir>$(SolutionDir)$(Platform)\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir).build\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir).target\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)$(Platform)\$(ProjectName)\$(Configuration)\</OutDir>
-    <IntDir>$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir).target\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir).build\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IntDir>$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
-    <OutDir>$(SolutionDir)$(Platform)\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir).build\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir).target\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)$(Platform)\$(ProjectName)\$(Configuration)\</OutDir>
-    <IntDir>$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir).target\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir).build\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -99,13 +99,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>privoxy-3.0.28;privoxy-3.0.28\pcre;privoxy-windows;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>mbedtls-2.24.0\include;privoxy-3.0.29;privoxy-3.0.29\pcre;privoxy-windows</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;$(SolutionDir).target\$(Platform)\$(Configuration)\mbedtls.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -117,13 +117,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>privoxy-3.0.28;privoxy-3.0.28\pcre;privoxy-windows;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>mbedtls-2.24.0\include;privoxy-3.0.29;privoxy-3.0.29\pcre;privoxy-windows</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;$(SolutionDir).target\$(Platform)\$(Configuration)\mbedtls.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -137,7 +137,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>privoxy-3.0.28;privoxy-3.0.28\pcre;privoxy-windows;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>mbedtls-2.24.0\include;privoxy-3.0.29;privoxy-3.0.29\pcre;privoxy-windows</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -145,7 +145,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;$(SolutionDir).target\$(Platform)\$(Configuration)\mbedtls.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -159,7 +159,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>privoxy-3.0.28;privoxy-3.0.28\pcre;privoxy-windows;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>mbedtls-2.24.0\include;privoxy-3.0.29;privoxy-3.0.29\pcre;privoxy-windows</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -167,60 +167,64 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;$(SolutionDir).target\$(Platform)\$(Configuration)\mbedtls.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="privoxy-3.0.28\actions.c" />
-    <ClCompile Include="privoxy-3.0.28\cgi.c" />
-    <ClCompile Include="privoxy-3.0.28\cgiedit.c" />
-    <ClCompile Include="privoxy-3.0.28\cgisimple.c" />
-    <ClCompile Include="privoxy-3.0.28\client-tags.c" />
-    <ClCompile Include="privoxy-3.0.28\deanimate.c" />
-    <ClCompile Include="privoxy-3.0.28\encode.c" />
-    <ClCompile Include="privoxy-3.0.28\errlog.c" />
-    <ClCompile Include="privoxy-3.0.28\filters.c" />
-    <ClCompile Include="privoxy-3.0.28\gateway.c" />
-    <ClCompile Include="privoxy-3.0.28\jbsockets.c" />
-    <ClCompile Include="privoxy-3.0.28\jcc.c" />
-    <ClCompile Include="privoxy-3.0.28\list.c" />
-    <ClCompile Include="privoxy-3.0.28\loadcfg.c" />
-    <ClCompile Include="privoxy-3.0.28\loaders.c" />
-    <ClCompile Include="privoxy-3.0.28\miscutil.c" />
-    <ClCompile Include="privoxy-3.0.28\parsers.c" />
-    <ClCompile Include="privoxy-3.0.28\pcre\chartables.c" />
-    <ClCompile Include="privoxy-3.0.28\pcre\get.c" />
-    <ClCompile Include="privoxy-3.0.28\pcre\maketables.c" />
-    <ClCompile Include="privoxy-3.0.28\pcre\pcre.c" />
-    <ClCompile Include="privoxy-3.0.28\pcre\pcreposix.c" />
-    <ClCompile Include="privoxy-3.0.28\pcre\study.c" />
-    <ClCompile Include="privoxy-3.0.28\pcrs.c" />
-    <ClCompile Include="privoxy-3.0.28\ssplit.c" />
-    <ClCompile Include="privoxy-3.0.28\urlmatch.c" />
-    <ClCompile Include="privoxy-3.0.28\w32log.c" />
-    <ClCompile Include="privoxy-3.0.28\w32svrapi.c" />
-    <ClCompile Include="privoxy-3.0.28\w32taskbar.c" />
-    <ClCompile Include="privoxy-3.0.28\win32.c" />
+    <ClCompile Include="privoxy-3.0.29\actions.c" />
+    <ClCompile Include="privoxy-3.0.29\cgi.c" />
+    <ClCompile Include="privoxy-3.0.29\cgiedit.c" />
+    <ClCompile Include="privoxy-3.0.29\cgisimple.c" />
+    <ClCompile Include="privoxy-3.0.29\client-tags.c" />
+    <ClCompile Include="privoxy-3.0.29\deanimate.c" />
+    <ClCompile Include="privoxy-3.0.29\encode.c" />
+    <ClCompile Include="privoxy-3.0.29\errlog.c" />
+    <ClCompile Include="privoxy-3.0.29\filters.c" />
+    <ClCompile Include="privoxy-3.0.29\gateway.c" />
+    <ClCompile Include="privoxy-3.0.29\jbsockets.c" />
+    <ClCompile Include="privoxy-3.0.29\jcc.c" />
+    <ClCompile Include="privoxy-3.0.29\list.c" />
+    <ClCompile Include="privoxy-3.0.29\loadcfg.c" />
+    <ClCompile Include="privoxy-3.0.29\loaders.c" />
+    <ClCompile Include="privoxy-3.0.29\miscutil.c" />
+    <ClCompile Include="privoxy-3.0.29\parsers.c" />
+    <ClCompile Include="privoxy-3.0.29\pcre\chartables.c" />
+    <ClCompile Include="privoxy-3.0.29\pcre\get.c" />
+    <ClCompile Include="privoxy-3.0.29\pcre\maketables.c" />
+    <ClCompile Include="privoxy-3.0.29\pcre\pcre.c" />
+    <ClCompile Include="privoxy-3.0.29\pcre\pcreposix.c" />
+    <ClCompile Include="privoxy-3.0.29\pcre\study.c" />
+    <ClCompile Include="privoxy-3.0.29\pcrs.c" />
+    <ClCompile Include="privoxy-3.0.29\ssl.c" />
+    <ClCompile Include="privoxy-3.0.29\ssl_common.c" />
+    <ClCompile Include="privoxy-3.0.29\ssplit.c" />
+    <ClCompile Include="privoxy-3.0.29\urlmatch.c" />
+    <ClCompile Include="privoxy-3.0.29\w32log.c" />
+    <ClCompile Include="privoxy-3.0.29\w32svrapi.c" />
+    <ClCompile Include="privoxy-3.0.29\w32taskbar.c" />
+    <ClCompile Include="privoxy-3.0.29\win32.c" />
     <ClCompile Include="privoxy-windows\privoxy-windows.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="privoxy-3.0.28\actionlist.h" />
-    <ClInclude Include="privoxy-3.0.28\client-tags.h" />
-    <ClInclude Include="privoxy-3.0.28\config.h" />
-    <ClInclude Include="privoxy-3.0.28\pcre\config.h" />
-    <ClInclude Include="privoxy-3.0.28\pcre\internal.h" />
-    <ClInclude Include="privoxy-3.0.28\pcre\pcre.h" />
-    <ClInclude Include="privoxy-3.0.28\pcrs.h" />
-    <ClInclude Include="privoxy-3.0.28\project.h" />
-    <ClInclude Include="privoxy-3.0.28\w32log.h" />
-    <ClInclude Include="privoxy-3.0.28\w32res.h" />
-    <ClInclude Include="privoxy-3.0.28\w32svrapi.h" />
-    <ClInclude Include="privoxy-3.0.28\w32taskbar.h" />
-    <ClInclude Include="privoxy-3.0.28\win32.h" />
+    <ClInclude Include="privoxy-3.0.29\actionlist.h" />
+    <ClInclude Include="privoxy-3.0.29\client-tags.h" />
+    <ClInclude Include="privoxy-3.0.29\config.h" />
+    <ClInclude Include="privoxy-3.0.29\pcre\config.h" />
+    <ClInclude Include="privoxy-3.0.29\pcre\internal.h" />
+    <ClInclude Include="privoxy-3.0.29\pcre\pcre.h" />
+    <ClInclude Include="privoxy-3.0.29\pcrs.h" />
+    <ClInclude Include="privoxy-3.0.29\project.h" />
+    <ClInclude Include="privoxy-3.0.29\ssl.h" />
+    <ClInclude Include="privoxy-3.0.29\ssl_common.h" />
+    <ClInclude Include="privoxy-3.0.29\w32log.h" />
+    <ClInclude Include="privoxy-3.0.29\w32res.h" />
+    <ClInclude Include="privoxy-3.0.29\w32svrapi.h" />
+    <ClInclude Include="privoxy-3.0.29\w32taskbar.h" />
+    <ClInclude Include="privoxy-3.0.29\win32.h" />
     <ClInclude Include="privoxy-windows\privoxy-windows.h" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="privoxy-3.0.28\w32.rc" />
+    <ResourceCompile Include="privoxy-3.0.29\w32.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

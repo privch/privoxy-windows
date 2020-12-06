@@ -1,98 +1,104 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="privoxy-3.0.28\actions.c">
+    <ClCompile Include="privoxy-3.0.29\actions.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\cgi.c">
+    <ClCompile Include="privoxy-3.0.29\cgi.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\cgiedit.c">
+    <ClCompile Include="privoxy-3.0.29\cgiedit.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\cgisimple.c">
+    <ClCompile Include="privoxy-3.0.29\cgisimple.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\deanimate.c">
+    <ClCompile Include="privoxy-3.0.29\deanimate.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\encode.c">
+    <ClCompile Include="privoxy-3.0.29\encode.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\errlog.c">
+    <ClCompile Include="privoxy-3.0.29\errlog.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\filters.c">
+    <ClCompile Include="privoxy-3.0.29\filters.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\gateway.c">
+    <ClCompile Include="privoxy-3.0.29\gateway.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\jbsockets.c">
+    <ClCompile Include="privoxy-3.0.29\jbsockets.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\jcc.c">
+    <ClCompile Include="privoxy-3.0.29\jcc.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\list.c">
+    <ClCompile Include="privoxy-3.0.29\list.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\loadcfg.c">
+    <ClCompile Include="privoxy-3.0.29\loadcfg.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\loaders.c">
+    <ClCompile Include="privoxy-3.0.29\loaders.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\miscutil.c">
+    <ClCompile Include="privoxy-3.0.29\miscutil.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\parsers.c">
+    <ClCompile Include="privoxy-3.0.29\parsers.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\ssplit.c">
+    <ClCompile Include="privoxy-3.0.29\ssplit.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\urlmatch.c">
+    <ClCompile Include="privoxy-3.0.29\urlmatch.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\client-tags.c">
+    <ClCompile Include="privoxy-3.0.29\client-tags.c">
       <Filter>client-tags</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\w32log.c">
+    <ClCompile Include="privoxy-3.0.29\w32log.c">
       <Filter>w32</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\w32svrapi.c">
+    <ClCompile Include="privoxy-3.0.29\w32svrapi.c">
       <Filter>w32</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\w32taskbar.c">
+    <ClCompile Include="privoxy-3.0.29\w32taskbar.c">
       <Filter>w32</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\win32.c">
+    <ClCompile Include="privoxy-3.0.29\win32.c">
       <Filter>w32</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\pcrs.c">
+    <ClCompile Include="privoxy-3.0.29\pcrs.c">
       <Filter>pcrs</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\pcre\get.c">
+    <ClCompile Include="privoxy-3.0.29\pcre\get.c">
       <Filter>pcre</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\pcre\maketables.c">
+    <ClCompile Include="privoxy-3.0.29\pcre\maketables.c">
       <Filter>pcre</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\pcre\pcre.c">
+    <ClCompile Include="privoxy-3.0.29\pcre\pcre.c">
       <Filter>pcre</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\pcre\study.c">
+    <ClCompile Include="privoxy-3.0.29\pcre\study.c">
       <Filter>pcre</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\pcre\pcreposix.c">
+    <ClCompile Include="privoxy-3.0.29\pcre\pcreposix.c">
       <Filter>pcre</Filter>
     </ClCompile>
-    <ClCompile Include="privoxy-3.0.28\pcre\chartables.c">
+    <ClCompile Include="privoxy-3.0.29\pcre\chartables.c">
       <Filter>pcre</Filter>
     </ClCompile>
     <ClCompile Include="privoxy-windows\privoxy-windows.c">
       <Filter>privoxy-windows</Filter>
+    </ClCompile>
+    <ClCompile Include="privoxy-3.0.29\ssl_common.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="privoxy-3.0.29\ssl.c">
+      <Filter>mbedtls</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -117,53 +123,65 @@
     <Filter Include="privoxy-windows">
       <UniqueIdentifier>{6a4654b1-b09c-4bb8-b360-431c33ea73c1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ssl">
+      <UniqueIdentifier>{36abb145-27fd-47bb-9d09-ba850d006b66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mbedtls">
+      <UniqueIdentifier>{223c4a6a-7676-4289-a88a-e30565a92ace}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="privoxy-3.0.28\project.h">
+    <ClInclude Include="privoxy-3.0.29\project.h">
       <Filter>header</Filter>
     </ClInclude>
-    <ClInclude Include="privoxy-3.0.28\actionlist.h">
+    <ClInclude Include="privoxy-3.0.29\actionlist.h">
       <Filter>header</Filter>
     </ClInclude>
-    <ClInclude Include="privoxy-3.0.28\client-tags.h">
+    <ClInclude Include="privoxy-3.0.29\client-tags.h">
       <Filter>client-tags</Filter>
     </ClInclude>
-    <ClInclude Include="privoxy-3.0.28\w32log.h">
+    <ClInclude Include="privoxy-3.0.29\w32log.h">
       <Filter>w32</Filter>
     </ClInclude>
-    <ClInclude Include="privoxy-3.0.28\w32res.h">
+    <ClInclude Include="privoxy-3.0.29\w32res.h">
       <Filter>w32</Filter>
     </ClInclude>
-    <ClInclude Include="privoxy-3.0.28\w32svrapi.h">
+    <ClInclude Include="privoxy-3.0.29\w32svrapi.h">
       <Filter>w32</Filter>
     </ClInclude>
-    <ClInclude Include="privoxy-3.0.28\w32taskbar.h">
+    <ClInclude Include="privoxy-3.0.29\w32taskbar.h">
       <Filter>w32</Filter>
     </ClInclude>
-    <ClInclude Include="privoxy-3.0.28\win32.h">
+    <ClInclude Include="privoxy-3.0.29\win32.h">
       <Filter>w32</Filter>
     </ClInclude>
-    <ClInclude Include="privoxy-3.0.28\config.h">
+    <ClInclude Include="privoxy-3.0.29\config.h">
       <Filter>header</Filter>
     </ClInclude>
-    <ClInclude Include="privoxy-3.0.28\pcrs.h">
+    <ClInclude Include="privoxy-3.0.29\pcrs.h">
       <Filter>pcrs</Filter>
     </ClInclude>
-    <ClInclude Include="privoxy-3.0.28\pcre\config.h">
+    <ClInclude Include="privoxy-3.0.29\pcre\config.h">
       <Filter>pcre</Filter>
     </ClInclude>
-    <ClInclude Include="privoxy-3.0.28\pcre\internal.h">
+    <ClInclude Include="privoxy-3.0.29\pcre\internal.h">
       <Filter>pcre</Filter>
     </ClInclude>
-    <ClInclude Include="privoxy-3.0.28\pcre\pcre.h">
+    <ClInclude Include="privoxy-3.0.29\pcre\pcre.h">
       <Filter>pcre</Filter>
     </ClInclude>
     <ClInclude Include="privoxy-windows\privoxy-windows.h">
       <Filter>privoxy-windows</Filter>
     </ClInclude>
+    <ClInclude Include="privoxy-3.0.29\ssl_common.h">
+      <Filter>ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="privoxy-3.0.29\ssl.h">
+      <Filter>mbedtls</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="privoxy-3.0.28\w32.rc">
+    <ResourceCompile Include="privoxy-3.0.29\w32.rc">
       <Filter>w32</Filter>
     </ResourceCompile>
   </ItemGroup>
