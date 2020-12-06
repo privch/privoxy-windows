@@ -22,8 +22,6 @@ The privoxy.exe project, depends on mbedtls, it was configured as windows consol
 
 This program is used to generate the source file `chartables.c` which is needed by privoxy.
 
-![](https://github.com/xinlake/privoxy-windows/raw/master/Assets/screen-3.0.29.jpg)
-
 # Build
 Download source code and save to a diectory e.g `Source-Privoxy`, before build you might like to know that project intermediate directories is under `Source-Privoxy\.build` and output directories is under `Source-Privoxy\.target`. You can change these settings in project property page.
 
@@ -35,3 +33,5 @@ dftables.exe > "..\..\..\privoxy-3.0.29\pcre\chartables.c"
 ```
 
 3, Build privoxy project.
+
+![](https://github.com/xinlake/privoxy-windows/raw/master/Assets/screen-3.0.29.jpg)
