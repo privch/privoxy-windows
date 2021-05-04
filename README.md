@@ -30,7 +30,7 @@ Download source code and save to a directory, e.g. `Source-Privoxy`, before you 
 
 2, Build dftables project, Goto the output directory (e.g. `Source-Privoxy\.target\x64\Debug`) and run it to generate the `chartables.c` file:
 ```
-dftables.exe > "..\..\..\privoxy-3.0.29\pcre\chartables.c"
+dftables.exe > "..\..\..\privoxy-3.0.32\pcre\chartables.c"
 ```
 
 3, Build privoxy project.
