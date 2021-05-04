@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mbedtls-2.24.0\include\mbedtls\config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mbedtls-2.24.0\library\aes.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\aesni.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\arc4.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\aria.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\asn1parse.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\asn1write.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\base64.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\bignum.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\blowfish.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\camellia.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\ccm.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\certs.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\chacha20.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\chachapoly.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\cipher.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\cipher_wrap.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\cmac.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\ctr_drbg.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\debug.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\des.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\dhm.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\ecdh.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\ecdsa.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\ecjpake.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\ecp.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\ecp_curves.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\entropy.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\entropy_poll.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\error.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\gcm.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\havege.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\hkdf.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\hmac_drbg.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\md.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\md2.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\md4.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\md5.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\memory_buffer_alloc.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\net_sockets.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\nist_kw.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\oid.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\padlock.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\pem.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\pk.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\pk_wrap.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\pkcs11.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\pkcs12.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\pkcs5.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\pkparse.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\pkwrite.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\platform.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\platform_util.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\poly1305.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\psa_crypto.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\psa_crypto_se.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\psa_crypto_slot_management.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\psa_crypto_storage.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\psa_its_file.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\ripemd160.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\rsa.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\rsa_internal.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\sha1.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\sha256.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\sha512.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\ssl_cache.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\ssl_ciphersuites.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\ssl_cli.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\ssl_cookie.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\ssl_msg.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\ssl_srv.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\ssl_ticket.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\ssl_tls.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\threading.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\timing.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\version.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\version_features.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\x509.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\x509_create.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\x509_crl.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\x509_crt.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\x509_csr.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\x509write_crt.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\x509write_csr.c" />
+    <ClCompile Include="mbedtls-2.24.0\library\xtea.c" />
+    <ClCompile Include="mbedtls-2.24.0\tests\src\helpers.c" />
+    <ClCompile Include="mbedtls-2.24.0\tests\src\random.c" />
+    <ClCompile Include="mbedtls-2.24.0\3rdparty\everest\library\everest.c" />
+    <ClCompile Include="mbedtls-2.24.0\3rdparty\everest\library\Hacl_Curve25519_joined.c" />
+    <ClCompile Include="mbedtls-2.24.0\3rdparty\everest\library\x25519.c" />
+    <ClCompile Include="mbedtls-2.24.0\3rdparty\everest\library\kremlib\FStar_UInt128_extracted.c" />
+    <ClCompile Include="mbedtls-2.24.0\3rdparty\everest\library\kremlib\FStar_UInt64_FStar_UInt32_FStar_UInt16_FStar_UInt8.c" />
+    <ClCompile Include="mbedtls-2.24.0\3rdparty\everest\library\legacy\Hacl_Curve25519.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{667a19df-15ef-4ab7-887b-0d882fd0ac60}</ProjectGuid>
+    <RootNamespace>mbedtls</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir).target\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir).build\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir).target\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir).build\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir).target\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir).build\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir).target\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir).build\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;KRML_VERIFIED_UINT128;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>mbedtls-2.24.0\include;mbedtls-2.24.0\library;mbedtls-2.24.0\3rdparty\everest\include;mbedtls-2.24.0\tests\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;KRML_VERIFIED_UINT128;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>mbedtls-2.24.0\include;mbedtls-2.24.0\library;mbedtls-2.24.0\3rdparty\everest\include;mbedtls-2.24.0\tests\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;KRML_VERIFIED_UINT128;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>mbedtls-2.24.0\include;mbedtls-2.24.0\library;mbedtls-2.24.0\3rdparty\everest\include;mbedtls-2.24.0\tests\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;KRML_VERIFIED_UINT128;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>mbedtls-2.24.0\include;mbedtls-2.24.0\library;mbedtls-2.24.0\3rdparty\everest\include;mbedtls-2.24.0\tests\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
