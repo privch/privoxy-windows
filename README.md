@@ -1,11 +1,13 @@
 # Privoxy for Windows
 ![MSBuild](https://github.com/xinlake/privoxy-windows/workflows/MSBuild/badge.svg)
 
-Windows port of [Privoxy](https://www.privoxy.org/) project, build and debug with Visual Studio 2019. The privoxy-windows Visual Studio solution (privoxy.sln) includes 3 projects:
+Select Language: English, [Simplified Chinese](README-CN.md)
 
-* privoxy
+Windows port of [Privoxy](https://www.privoxy.org/) project, build and debug with Visual Studio 2019. The `privoxy-windows` Visual Studio solution (privoxy.sln) includes 3 projects:
 
-The privoxy.exe project, depends on mbedtls project, it was configured as windows console application with following features enabled:
+### privoxy
+
+Windows native application privoxy.exe, depends on `mbedtls` static library, privoxy was configured as windows console application with following features enabled:
 ```C
 #define FEATURE_ACL
 #define FEATURE_GRACEFUL_TERMINATION
@@ -15,11 +17,11 @@ The privoxy.exe project, depends on mbedtls project, it was configured as window
 #define FEATURE_HTTPS_INSPECTION_MBEDTLS
 ```
 
-* mbedtls
+### mbedtls
 
 [Mbed TLS](https://tls.mbed.org/) Visual Studio static library.
 
-* dftables
+### dftables
 
 This program is used to generate the source file `chartables.c` which is needed by privoxy.
 
@@ -28,9 +30,9 @@ Download source code and save to a directory, e.g. `Source-Privoxy`, before you 
 
 1, Open `privoxy.sln` with Visual Studio 2019
 
-2, Build dftables project, Goto the output directory (e.g. `Source-Privoxy\.target\x64\Debug`) and run it to generate the `chartables.c` file:
+2, Build dftables project, Goto the output directory (e.g. `Source-Privoxy\.target\x64\Debug`) and run dftables.exe to generate the `chartables.c` file:
 ```
 dftables.exe > "..\..\..\privoxy-3.0.32\pcre\chartables.c"
 ```
 
-3, Build privoxy project.
+3, Build privoxy project, you can find the final file in the output directory.
