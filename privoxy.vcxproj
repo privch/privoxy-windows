@@ -99,7 +99,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>mbedtls-2.24.0\include;privoxy-3.0.32;privoxy-3.0.32\pcre;privoxy-windows</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>mbedtls-2.26.0\include;privoxy-3.0.32;privoxy-3.0.32\pcre;privoxy-windows</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -117,7 +117,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>mbedtls-2.24.0\include;privoxy-3.0.32;privoxy-3.0.32\pcre;privoxy-windows</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>mbedtls-2.26.0\include;privoxy-3.0.32;privoxy-3.0.32\pcre;privoxy-windows</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -137,7 +137,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>mbedtls-2.24.0\include;privoxy-3.0.32;privoxy-3.0.32\pcre;privoxy-windows</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>mbedtls-2.26.0\include;privoxy-3.0.32;privoxy-3.0.32\pcre;privoxy-windows</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -159,7 +159,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>mbedtls-2.24.0\include;privoxy-3.0.32;privoxy-3.0.32\pcre;privoxy-windows</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>mbedtls-2.26.0\include;privoxy-3.0.32;privoxy-3.0.32\pcre;privoxy-windows</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
