@@ -1,7 +1,0 @@
-Makefile
-
-*.sln
-*.vcxproj
-
-*.txt
-mbedtls/check_config

@@ -1,0 +1,7 @@
+*.o
+libmbed*
+*.sln
+*.vcxproj
+
+*.txt
+Makefile
